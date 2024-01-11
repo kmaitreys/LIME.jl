@@ -6,6 +6,7 @@ struct ImageParameter
     id::Int32
     nImages::Int32
     default_angle::Float64
+    
 
     
 end
