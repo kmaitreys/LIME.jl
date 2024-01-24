@@ -59,3 +59,23 @@ mutable struct Populations
     partner::Rates
     cont::ContinuumLine
 end
+
+mutable struct LineData
+    nlev::Int32
+    nline::Int32
+    npart::Int32
+    lal::Int32 # lower level
+    lau::Int32 # upper level
+    aeinst::Float64 # einstein coefficient A
+    freq::Float64 # frequency
+    beinstu::Float64 # einstein coefficient B for upper level
+    beinstl:: Float64 # einstein coefficient B for lower level
+    eterm::Float64 # energy of upper level
+    gstat::Float64 # statistical weight of upper level
+    girr::Float64 # isotropic g-factor
+    cmb::Float64 # cmb temperature
+    amass::Float64 # atomic mass
+    part::CollisionalData
+    mol_name::String
+    pops::Populations
+end
